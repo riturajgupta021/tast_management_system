@@ -95,7 +95,7 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
             "description": "This is a sample task",
             "dueDate": "YYYY-MM-DD",
             "priority": ['Low', 'Medium', 'High'],
-            "status": ['Pending', 'In Progress', 'Completed']
+            "status": ['Pending', 'In Progress', 'Completed'],
         }
         ```
     - Response:
