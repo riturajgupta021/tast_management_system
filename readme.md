@@ -106,9 +106,7 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
                 "_id": "task_id",
                 "title": "Sample Task",
                 "description": "This is a sample task",
-                "user": "user_id",
-                "createdAt": "timestamp",
-                "updatedAt": "timestamp"
+                "user": "user_id"
             }
         }
         ```
@@ -147,8 +145,6 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
             "title": "Sample Task",
             "description": "This is a sample task",
             "user": "user_id",
-            "createdAt": "timestamp",
-            "updatedAt": "timestamp"
         }
         ```
 
@@ -175,8 +171,6 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
                 "title": "Updated Task",
                 "description": "This is an updated task",
                 "user": "user_id",
-                "createdAt": "timestamp",
-                "updatedAt": "timestamp"
             }
         }
         ```
