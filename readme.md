@@ -92,7 +92,10 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
         ```json
         {
             "title": "Sample Task",
-            "description": "This is a sample task"
+            "description": "This is a sample task",
+            "dueDate": "YYYY-MM-DD",
+            "priority": ['Low', 'Medium', 'High'],
+            "status": ['Pending', 'In Progress', 'Completed']
         }
         ```
     - Response:
@@ -125,8 +128,6 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
                 "title": "Sample Task",
                 "description": "This is a sample task",
                 "user": "user_id",
-                "createdAt": "timestamp",
-                "updatedAt": "timestamp"
             },
             ...
         ]
