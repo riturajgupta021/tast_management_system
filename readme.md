@@ -127,7 +127,6 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
                 "description": "This is a sample task",
                 "user": "user_id",
             },
-            ...
         ]
         ```
 
