@@ -105,6 +105,7 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
             "task": {
                 "_id": "task_id",
                 "title": "Sample Task",
+                "dueDate": "YYYY-MM-DD",
                 "description": "This is a sample task",
                 "user": "user_id"
             }
@@ -124,6 +125,7 @@ This is a simple Task Management System built with Node.js, Express, and MongoDB
             {
                 "_id": "task_id",
                 "title": "Sample Task",
+                "dueDate": "YYYY-MM-DD",
                 "description": "This is a sample task",
                 "user": "user_id",
             },
