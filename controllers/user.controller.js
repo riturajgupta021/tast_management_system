@@ -15,7 +15,6 @@ const registerUser = async (req, res) => {
             return res.status(400).json({ error: 'User already exists' });
         }
         const hashedPassword = await User.hashPassword(password);
-        console.log('hashedPassword',hashedPassword)
         await User.create({ username, password: hashedPassword });
         res.status(201).json({ message: 'User registered successfully' });
     } catch (error) {
