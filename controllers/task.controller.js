@@ -31,8 +31,20 @@ const createTask = async (req, res) => {
 
 const getAllTasks = async (req, res) => {
   try {
-    const tasks = await Task.find({ user: req.user.userId }).populate('user');
-    res.json(tasks);
+    let taskFromCache = await client.get("tasks");
+    if (taskFromCache) {
+      return res.json({
+        source: "cache",
+        tasks: JSON.parse(taskFromCache)
+      });
+    }else{
+      const tasks = await Task.find({ user: req.user.userId }).populate('user');
+      await client.set("tasks", JSON.stringify(tasks));
+      res.json({
+        source: "api",
+        tasks
+      });
+    }
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
