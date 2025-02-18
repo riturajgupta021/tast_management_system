@@ -35,7 +35,6 @@ const loginUser = async (req, res) => {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
-        console.log('loginUser',token)
         res.json({ token });
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });

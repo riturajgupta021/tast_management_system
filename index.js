@@ -4,7 +4,6 @@ const dbConnection = require("./config/dbConnection");
 const userRouter = require("./routes/user.routes");
 const taskRouter = require("./routes/task.routes");
 const cors = require("cors");
-const client = require("./config/redisClint")
 
 const app = express();
 
